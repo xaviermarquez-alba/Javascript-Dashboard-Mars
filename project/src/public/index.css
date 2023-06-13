@@ -1,0 +1,208 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: Arial;
+}
+
+header {
+    /* header styles */
+}
+
+main {
+
+}
+
+footer {
+    /* footer styles */
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+    /* use mobile */
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+    /* use mobile */
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+    /* use mobile */
+}
+
+.grid-col {
+    position: relative;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.image-modal-popup {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-modal-popup img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-modal-popup span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.image-modal-popup .description {
+    margin-top: 20px;
+}
+
+.image-modal-popup h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.image-modal-popup p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery div {
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+.gallery div img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS for a basic website header */
+.header {
+    background-color: #f0f0f0; /* light gray background */
+    height: 80px; /* height of the header */
+    width: 100%; /* full width */
+    position: fixed; /* header will stick to the top */
+    top: 0; /* at the top of the page */
+    left: 0; /* and the left of the page */
+    z-index: 1000; /* layering order, ensure header is on top */
+    display: flex; /* use flexbox for layout */
+    align-items: center; /* center elements vertically */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* slight shadow for depth */
+}
+
+.header-logo {
+    font-size: 2em; /* make the logo larger */
+    font-weight: bold; /* make it bold */
+    text-transform: uppercase; /* make it all uppercase */
+    color: #333; /* dark gray text */
+
+}
+
+.logo {
+    height: 60px; /* adjust as necessary */
+    width: auto; /* maintains aspect ratio */
+}
+
+.header-nav {
+    display: flex; /* use flexbox for layout */
+}
+
+.header-nav a {
+    text-decoration: none; /* remove link underline */
+    color: #333; /* dark gray text */
+    margin-left: 20px; /* space links out a bit */
+}
+
+.header-nav a:hover {
+    color: #007BFF; /* change color on hover */
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.info-table th,
+.info-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #4ba3f6;
+    color: white;
+}
+
+.info-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#logo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
